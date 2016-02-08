@@ -3,3 +3,22 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  
+
+//
+// Routes
+   each route in routes 
+    ul
+     each stat, key in route
+      li(style="color:"+stat+";")= key +":"+ stat
+//
+// Vehicles
+//
+  each vehicle in vehicles
+   div
+    ul
+     each stat,key in vehicle
+      li= key +":"+ stat 
+//
+ 
